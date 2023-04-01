@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:published_time" content="2023-03-31T04:11:21.000Z">
-<meta property="article:modified_time" content="2023-04-01T06:30:10.000Z">
+<meta property="article:modified_time" content="2023-04-01T06:46:32.000Z">
 <meta property="article:author" content="Uranusual">
 <meta property="article:tag" content="教程,博客,心得记录">
 <meta name="twitter:card" content="summary">
@@ -57,7 +57,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-04-01 14:30:10'
+  postUpdate: '2023-04-01 14:46:32'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -161,7 +161,7 @@
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Uranusual's Blog"><span class="site-name">Uranusual's Blog</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">从MT3000入门openwrt软路由系统</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-03-31T04:11:21.000Z" title="发表于 2023-03-31 12:11:21">2023-03-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-01T06:30:10.000Z" title="更新于 2023-04-01 14:30:10">2023-04-01</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="从MT3000入门openwrt软路由系统"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>我是通过这款路由器入门的openwrt，所以我现在所写的教程更适合和我一样刚入门openwrt的人看，如果出现我没提到的问题，请自信搜索报错代码寻找解决方法</p>
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Uranusual's Blog"><span class="site-name">Uranusual's Blog</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">从MT3000入门openwrt软路由系统</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-03-31T04:11:21.000Z" title="发表于 2023-03-31 12:11:21">2023-03-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-01T06:46:32.000Z" title="更新于 2023-04-01 14:46:32">2023-04-01</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="从MT3000入门openwrt软路由系统"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>我是通过这款路由器入门的openwrt，所以我现在所写的教程更适合和我一样刚入门openwrt的人看，如果出现我没提到的问题，请自信搜索报错代码寻找解决方法</p>
 <p>通过我半个月的折腾,我总结了一下这款路由容易装且实用openwrt的应用：</p>
 <ol>
 <li>openclash(很多人入门都是为了这个翻墙功能吧)</li>
@@ -215,7 +215,7 @@
 <h4 id="设置Adguardhome"><a href="#设置Adguardhome" class="headerlink" title="设置Adguardhome"></a>设置Adguardhome</h4><h5 id="DNS设置"><a href="#DNS设置" class="headerlink" title="DNS设置"></a>DNS设置</h5><h5 id="过滤规则设置"><a href="#过滤规则设置" class="headerlink" title="过滤规则设置"></a>过滤规则设置</h5><h5 id="客户端设置"><a href="#客户端设置" class="headerlink" title="客户端设置"></a>客户端设置</h5><h3 id="微力同步"><a href="#微力同步" class="headerlink" title="微力同步"></a>微力同步</h3><h1 id="软件的搭配实用"><a href="#软件的搭配实用" class="headerlink" title="软件的搭配实用"></a>软件的搭配实用</h1><p>以下是用mt3000设置的，不清楚自动的adguardhome有没有开启重定向，可能设置有出入</p>
 <h2 id="DNS设置：（openclash-adguardhome-smartDNS）"><a href="#DNS设置：（openclash-adguardhome-smartDNS）" class="headerlink" title="DNS设置：（openclash+adguardhome+smartDNS）"></a>DNS设置：（openclash+adguardhome+smartDNS）</h2><p>方案：客户端(你上网的手机电脑)  传递域名 adguadhome 阻拦过滤域名,再把剩下的域名传递到→ openclash<br>openclash 进行网络分流→ 翻墙服务器 访问服务器ip地址→ 返回响应的信息→翻墙服务器 传递响应信息→客户端<br> 解释：如果是由openclash再到adguardhome,有一些地址请求不会传达到adguardhome</p>
 <h3 id="各项设置"><a href="#各项设置" class="headerlink" title="各项设置"></a>各项设置</h3><ol>
-<li>openclash:关闭本地DNS劫持<br>openclash-Plugin Settings-DNS设置-本地DNS劫持-选择停用<br><img src="/%E4%BB%8EMT3000%E5%85%A5%E9%97%A8openwrt%E8%BD%AF%E8%B7%AF%E7%94%B1%E7%B3%BB%E7%BB%9F/ClashDNS%E8%AE%BE%E7%BD%AE.png" alt="openclash设置"></li>
+<li>openclash:关闭本地DNS劫持<br>openclash-Plugin Settings-DNS设置-本地DNS劫持-选择停用<br><img src="/../src/%E4%BB%8EMT3000%E5%85%A5%E9%97%A8openwrt%E8%BD%AF%E8%B7%AF%E7%94%B1%E7%B3%BB%E7%BB%9F/ClashDNS%E8%AE%BE%E7%BD%AE.png" alt="openclash设置"></li>
 <li>smartDNS启用并记下端口默认为6053</li>
 <li>Adguardhome启用,设置DNS上游为只剩一个的192.168.8.1:6053（192.168.8.1为你的路由器地址，6053为你的smartDNS端口）并记下adguardhome的监听端口默认为3053<br>图片</li>
 <li>DNS转发添加192.168.8.1#3053或者127.0.0.1#3053 (已经自动设置好就不用管了)</li>
