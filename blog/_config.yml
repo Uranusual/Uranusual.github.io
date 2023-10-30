@@ -1,0 +1,133 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Uranusual's Blog
+subtitle: '' #副标题
+description: 'This is Uranusual`s blog, welcome to my blog!'
+keywords: '教程,博客,心得记录'
+author: Uranusual
+language: zh-CN
+timezone: 'Asia/Shanghai'
+
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: https://uranusual.github.io #这里是不用加project的,不如路径会出错
+permalink: :year/:month/:day/:title/ #文章链接格式原:year/:month/:day/:title/,目前为了和图片链接保持一致,改为
+permalink_defaults: #
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+# post_asset_folder: false
+post_asset_folder: True
+#启用后，可以在文章目录下创建文件夹，文件夹内的文件会被复制到public目录下，同时会在文章中生成相应的链接。
+marked: #markdown解析器
+  prependRoot: True #是否在链接前加上根路径
+  postAsset: True
+  gfm: true
+  pedantic: false
+  breaks: true
+  smartLists: true
+  smartypants: true
+  quotes: '“”‘’'
+  modifyAnchors: 0
+  anchorAlias: false
+  autolink: true
+  mangle: true
+  sanitizeUrl: false
+  dompurify: false
+  headerIds: true
+  lazyload: false
+  external_link:
+    enable: false
+    exclude: []
+    nofollow: false
+  disableNunjucks: false
+  descriptionLists: true
+
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+# theme: landscape
+theme:  butterfly
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: git 
+  repo: https://github.com/Uranusual/Uranusual.github.io.git
+  branch: blog #部署的分支
